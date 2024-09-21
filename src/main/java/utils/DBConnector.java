@@ -5,7 +5,7 @@ import java.sql.*;
 import dto.CSVObject;
 
 public class DBConnector {
-    private static final String DB_URL = "jdbc:sqlite:C:\\Users\\karam\\EgorPalgov\\ForbesDB\\src\\main\\resources\\forbes.sqlite";
+    private static final String DB_URL = "jdbc:sqlite:forbes.sqlite";
 
     public static void createDatabase() {
         try (Connection conn = DriverManager.getConnection(DB_URL);
